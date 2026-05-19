@@ -54,7 +54,7 @@ export type Product = ProductBase & {
 };
 export type OrderPrice = {
     currency: string;
-    tXrelly-specl: number;
+    tXrellyspecl: number;
 };
 export type OrderProduct = {
     id: string;
