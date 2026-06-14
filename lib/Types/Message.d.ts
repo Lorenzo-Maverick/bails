@@ -183,7 +183,6 @@ export type MessageRelayOptions = MinimalRelayOptions & {
     /** only send to a specific participant; used when a message decryption fails for a single user */
     participant?: {
         jid: string;
-        count: number;
     };
     /** additional attributes to add to the WA binary node */
     additionalAttributes?: {
@@ -207,6 +206,10 @@ export type MiscMessageGenerationOptions = MinimalRelayOptions & {
     mediaUploadTimeoutMs?: number;
     /** jid list of participants for status@broadcast */
     statusJidList?: string[];
+    /** only send to a specific participant; used when a message decryption fails for a single user */
+    participant?: {
+        jid: string;
+    };
     /** backgroundcolor for status */
     backgroundColor?: string;
     /** font type for status */

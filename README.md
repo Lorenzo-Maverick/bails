@@ -76,6 +76,13 @@ Send Status Mention Group/Private Chat
 await sock.sendStatusMention(content, jid);
 ```
 
+### Participant Message
+Send message to a specific participant (useful for group or status):
+
+```javascript
+await sock.sendMessage(jid, { text: 'Hello' }, { participant: { jid: targetJid } });
+```
+
 ### Status Group Message V2
 Send Group Status With Version 2 
 
